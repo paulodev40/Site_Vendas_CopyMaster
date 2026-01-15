@@ -381,7 +381,7 @@ const Pricing = () => (
               </li>
             ))}
           </ul>
-          <a href="#oferta" className="w-full block text-center glass py-3 rounded-xl font-bold hover:bg-white/10 transition">
+          <a href="https://forms.gle/i9cjNnGEqiVKUjFh8" target="_blank" rel="noopener noreferrer" className="w-full block text-center glass py-3 rounded-xl font-bold hover:bg-white/10 transition">
             Começar Grátis
           </a>
         </div>
