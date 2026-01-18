@@ -784,9 +784,10 @@ const FinalCTA = () => {
             <ul className="text-left space-y-3 mb-8 text-sm">
               {[
                 "150 copies/mês (5 por dia)",
-                "Upload de arquivos até 10MB",
+                "Upload de arquivos até 50MB",
                 "Histórico de 1 ano",
-                "Suporte prioritário"
+                "Suporte prioritário",
+                "🔥 45 vídeos/mês com IA"
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-2 text-gray-300">
                   <CheckCircle2 size={16} className="text-yellow-400" /> {item}
