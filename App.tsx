@@ -560,7 +560,7 @@ const Pricing = () => (
         <div className="glass p-8 rounded-2xl border-white/5 hover:border-blue-400/20 transition">
           <div className="text-center mb-6">
             <h3 className="text-2xl font-bold mb-2 text-blue-400">BASIC</h3>
-            <div className="text-4xl font-black text-white mb-2">R$ 97</div>
+            <div className="text-4xl font-black text-white mb-2">R$ 129</div>
             <p className="text-sm text-gray-500">/mês</p>
           </div>
           <ul className="space-y-3 mb-8 text-sm">
@@ -590,7 +590,7 @@ const Pricing = () => (
           </div>
           <div className="text-center mb-6">
             <h3 className="text-2xl font-bold mb-2 text-purple-400">PRO</h3>
-            <div className="text-4xl font-black text-white mb-2">R$ 297</div>
+            <div className="text-4xl font-black text-white mb-2">R$ 257</div>
             <p className="text-sm text-gray-500">/mês</p>
           </div>
           <ul className="space-y-3 mb-8 text-sm">
@@ -776,8 +776,8 @@ const FinalCTA = () => {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-yellow-400 text-black px-6 py-1 rounded-full text-xs font-black uppercase tracking-tighter">MAIS ESCOLHIDO</div>
             <h3 className="text-2xl font-bold mb-4">Plano PRO</h3>
             <div className="flex items-baseline justify-center gap-2 mb-8">
-              <span className="text-lg text-gray-500 line-through">R$ 497</span>
-              <span className="text-5xl font-black text-yellow-400">R$ 297</span>
+              <span className="text-lg text-gray-500 line-through">R$ 397</span>
+              <span className="text-5xl font-black text-yellow-400">R$ 257</span>
               <span className="text-gray-500">/mês</span>
             </div>
             
@@ -820,10 +820,6 @@ const FinalCTA = () => {
             </div>
           </div>
         </div>
-
-        <p className="text-sm text-gray-500">
-          Após o período promocional, o preço volta para R$ 497/mês
-        </p>
       </div>
     </section>
   );
