@@ -85,10 +85,10 @@ const Hero = () => (
       </h1>
       
       <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-        Economize <span className="text-yellow-400 font-bold">R$ 50.000/ano</span> em copywriters. 
-        <span className="text-cyan-400 font-bold"> Claude Sonnet 4</span> + Frameworks Profissionais + 
-        <span className="text-orange-400 font-bold"> Vídeos IA 🔥</span> = 
-        <span className="text-white font-bold"> Copies e Vídeos que Vendem</span>
+        Economize <span className="text-yellow-400 font-bold">R$ 50.000,00/ano</span> utilizando nossa ferramenta + 
+        <span className="text-cyan-400 font-bold"> Frameworks</span> + 
+        <span className="text-orange-400 font-bold"> Videos IA</span> = 
+        <span className="text-white font-bold"> Copys e Vídeos que Vendem!</span>
       </p>
       
       <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
@@ -148,8 +148,8 @@ const PainPoints = () => (
           },
           {
             icon: "💸",
-            title: "Paga R$ 500-3.000 por copywriter",
-            desc: "E ainda tem que esperar 7-15 dias de prazo. Quando precisa fazer ajustes, paga extra."
+            title: "Investe tempo e dinheiro sem resultados garantidos",
+            desc: "Você gasta recursos tentando criar copies eficazes, mas sem ter certeza se vão converter."
           },
           {
             icon: "❓",
@@ -440,9 +440,6 @@ const VideoGeneration = () => (
           COMEÇAR A CRIAR VÍDEOS AGORA
           <Film className="group-hover:scale-110 transition" />
         </a>
-        <p className="text-sm text-gray-500 mt-4">
-          ✨ Disponível nos planos PRO e ENTERPRISE
-        </p>
       </div>
     </div>
   </section>
