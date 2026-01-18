@@ -26,7 +26,14 @@ import {
   Check,
   AlertCircle,
   Shield,
-  DollarSign
+  DollarSign,
+  Film,
+  Play,
+  Monitor,
+  Smartphone,
+  Image as ImageIcon,
+  Database,
+  Sparkles
 } from 'lucide-react';
 
 // --- Components ---
@@ -79,8 +86,9 @@ const Hero = () => (
       
       <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
         Economize <span className="text-yellow-400 font-bold">R$ 50.000/ano</span> em copywriters. 
-        <span className="text-cyan-400 font-bold"> Claude Sonnet 4</span> + Frameworks Profissionais = 
-        <span className="text-white font-bold"> Copies que Vendem</span>
+        <span className="text-cyan-400 font-bold"> Claude Sonnet 4</span> + Frameworks Profissionais + 
+        <span className="text-orange-400 font-bold"> Vídeos IA 🔥</span> = 
+        <span className="text-white font-bold"> Copies e Vídeos que Vendem</span>
       </p>
       
       <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
@@ -227,6 +235,12 @@ const CopyTypes = () => (
             title: "Landing Page",
             desc: "Página de captura com headline poderosa, bullet points e CTA para conversão",
             features: ["Mobile-first", "Foco em conversão", "Benefícios claros"]
+          },
+          {
+            icon: <Film className="text-orange-400" size={32} />,
+            title: "Vídeos com IA 🔥",
+            desc: "Gera vídeos profissionais em 1-3 minutos com IA de última geração (MiniMax, VEO)",
+            features: ["Qualidade 1080p", "Formatos Stories/YouTube", "Upload de imagem"]
           }
         ].map((type, i) => (
           <div key={i} className="glass p-8 rounded-2xl border-white/5 hover:border-yellow-400/20 transition group">
@@ -248,6 +262,192 @@ const CopyTypes = () => (
   </section>
 );
 
+// Seção de Geração de Vídeos com IA
+const VideoGeneration = () => (
+  <section className="py-24 bg-gradient-to-b from-black via-zinc-950 to-black relative overflow-hidden">
+    <div className="absolute inset-0 z-0">
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-orange-600/10 rounded-full blur-[120px]"></div>
+      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px]"></div>
+    </div>
+
+    <div className="container mx-auto px-6 relative z-10">
+      <div className="text-center mb-16">
+        <div className="inline-block px-4 py-1 rounded-full glass border-orange-400/30 text-orange-400 text-xs font-bold mb-6 uppercase tracking-wider">
+          🔥 NOVO! Lançamento Exclusivo
+        </div>
+        <h2 className="font-display text-4xl md:text-6xl font-black mb-8 leading-tight">
+          <span className="text-white">Geração de </span>
+          <span className="text-orange-400">Vídeos com IA</span>
+        </h2>
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          Crie vídeos profissionais de alta qualidade em <span className="text-orange-400 font-bold">1-3 minutos</span>. 
+          Perfeito para Stories, Reels, YouTube e Landing Pages.
+        </p>
+      </div>
+
+      {/* Cards de Recursos */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        {[
+          {
+            icon: <Sparkles className="text-orange-400" size={32} />,
+            title: "Geração Ultra Rápida",
+            desc: "De 1 a 3 minutos para criar vídeos profissionais de alta qualidade",
+            badge: "⚡ Rápido"
+          },
+          {
+            icon: <Monitor className="text-cyan-400" size={32} />,
+            title: "Qualidade Cinema 1080p",
+            desc: "Vídeos em Full HD com qualidade profissional digna de cinema",
+            badge: "🎬 HD"
+          },
+          {
+            icon: <Smartphone className="text-purple-400" size={32} />,
+            title: "Formatos Versáteis",
+            desc: "9:16 para Stories/Reels ou 16:9 para YouTube/Landscape",
+            badge: "📱 Multi"
+          },
+          {
+            icon: <BrainCircuit className="text-pink-400" size={32} />,
+            title: "IA de Última Geração",
+            desc: "Integração com Replicate: MiniMax Video-01, VEO e outros modelos",
+            badge: "🧠 IA"
+          },
+          {
+            icon: <ImageIcon className="text-green-400" size={32} />,
+            title: "Upload de Imagem",
+            desc: "Use imagens de referência para melhorar a qualidade e direção do vídeo",
+            badge: "🖼️ Ref"
+          },
+          {
+            icon: <Database className="text-blue-400" size={32} />,
+            title: "Armazenamento Permanente",
+            desc: "Todos os vídeos salvos automaticamente no Supabase Storage",
+            badge: "💾 Cloud"
+          },
+          {
+            icon: <History className="text-yellow-400" size={32} />,
+            title: "Biblioteca Completa",
+            desc: "Histórico organizado com preview, download e gerenciamento fácil",
+            badge: "📚 Organize"
+          },
+          {
+            icon: <Download className="text-red-400" size={32} />,
+            title: "Download Ilimitado",
+            desc: "Baixe seus vídeos quantas vezes quiser em alta qualidade",
+            badge: "⬇️ Export"
+          },
+          {
+            icon: <Play className="text-indigo-400" size={32} />,
+            title: "Preview Instantâneo",
+            desc: "Visualize seus vídeos diretamente na plataforma antes de baixar",
+            badge: "▶️ Preview"
+          }
+        ].map((feature, i) => (
+          <div key={i} className="glass p-8 rounded-2xl border-white/5 hover:border-orange-400/20 transition group relative overflow-hidden">
+            <div className="absolute top-4 right-4 text-xs font-bold glass px-2 py-1 rounded-full border-white/10">
+              {feature.badge}
+            </div>
+            <div className="mb-6">{feature.icon}</div>
+            <h3 className="text-xl font-bold mb-3 text-white group-hover:text-orange-400 transition">
+              {feature.title}
+            </h3>
+            <p className="text-gray-400 leading-relaxed text-sm">
+              {feature.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* Demonstração Visual */}
+      <div className="max-w-5xl mx-auto glass p-8 rounded-3xl border-orange-400/20">
+        <div className="text-center mb-8">
+          <h3 className="text-2xl font-bold mb-2 text-white">
+            Como Funciona?
+          </h3>
+          <p className="text-gray-400">
+            3 passos simples para criar vídeos profissionais
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {[
+            {
+              step: "01",
+              title: "Descreva ou Faça Upload",
+              desc: "Digite o que você quer no vídeo ou faça upload de uma imagem de referência",
+              icon: <Upload className="text-orange-400" size={24} />
+            },
+            {
+              step: "02",
+              title: "Escolha o Formato",
+              desc: "Selecione 9:16 (Stories/Reels) ou 16:9 (YouTube/Landscape)",
+              icon: <Monitor className="text-cyan-400" size={24} />
+            },
+            {
+              step: "03",
+              title: "Gerar e Baixar",
+              desc: "Em 1-3 minutos seu vídeo 1080p está pronto para download",
+              icon: <Download className="text-green-400" size={24} />
+            }
+          ].map((step, i) => (
+            <div key={i} className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full glass flex items-center justify-center border-2 border-white/10">
+                {step.icon}
+              </div>
+              <div className="text-5xl font-black text-white/10 mb-2">
+                {step.step}
+              </div>
+              <h4 className="text-lg font-bold mb-2 text-white">
+                {step.title}
+              </h4>
+              <p className="text-gray-400 text-sm">
+                {step.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Casos de Uso */}
+      <div className="mt-16 text-center">
+        <h3 className="text-2xl font-bold mb-8 text-white">
+          Perfeito Para:
+        </h3>
+        <div className="flex flex-wrap justify-center gap-4">
+          {[
+            "📱 Stories & Reels",
+            "🎥 Anúncios de Vídeo",
+            "🌐 Landing Pages",
+            "📺 YouTube Shorts",
+            "💼 Apresentações",
+            "🎬 VSL (Video Sales Letter)",
+            "📧 Email Marketing",
+            "🚀 Lançamentos"
+          ].map((use, i) => (
+            <div key={i} className="glass px-6 py-3 rounded-full border-white/10 hover:border-orange-400/30 transition text-sm font-semibold">
+              {use}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* CTA */}
+      <div className="mt-16 text-center">
+        <a 
+          href="#oferta" 
+          className="inline-flex items-center gap-2 bg-orange-400 hover:bg-orange-300 text-black px-10 py-5 rounded-xl font-black text-lg transition-all transform hover:scale-105 shadow-xl shadow-orange-400/20 group"
+        >
+          COMEÇAR A CRIAR VÍDEOS AGORA
+          <Film className="group-hover:scale-110 transition" />
+        </a>
+        <p className="text-sm text-gray-500 mt-4">
+          ✨ Disponível nos planos PRO e ENTERPRISE
+        </p>
+      </div>
+    </div>
+  </section>
+);
+
 // Comparação vs Copywriter e ChatGPT
 const Comparison = () => (
   <section className="py-24 bg-black">
@@ -258,36 +458,7 @@ const Comparison = () => (
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-        {/* vs Copywriter */}
-        <div className="glass p-8 rounded-2xl border-white/5">
-          <h3 className="text-2xl font-bold mb-8 text-center text-cyan-400">vs Copywriter Freelancer</h3>
-          <div className="space-y-4">
-            {[
-              { cmp: "R$ 1,98 por copy", vs: "R$ 500-3.000 por copy" },
-              { cmp: "Copies em 5 minutos", vs: "3-7 dias de prazo" },
-              { cmp: "Ilimitadas variações", vs: "1 versão (revisões custam extra)" },
-              { cmp: "Disponível 24/7", vs: "Horário comercial" },
-              { cmp: "5 tipos de copy", vs: "Especialização limitada" }
-            ].map((item, i) => (
-              <div key={i} className="flex items-start gap-4 pb-4 border-b border-white/5">
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-1">
-                    <CheckCircle2 size={16} className="text-green-400" />
-                    <span className="text-white font-semibold">{item.cmp}</span>
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-1">
-                    <X size={16} className="text-red-400" />
-                    <span className="text-gray-500">{item.vs}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
+      <div className="max-w-3xl mx-auto">
         {/* vs ChatGPT */}
         <div className="glass p-8 rounded-2xl border-white/5">
           <h3 className="text-2xl font-bold mb-8 text-center text-purple-400">vs ChatGPT/Outras IAs</h3>
@@ -333,7 +504,9 @@ const Features = () => (
           { icon: <History className="text-blue-400" />, title: "Histórico Completo", desc: "Nunca perca uma copy criada. De 7 dias (Free) até 1 ano (Pro)" },
           { icon: <Download className="text-pink-400" />, title: "Exportação Múltipla", desc: "Copiar para clipboard, baixar em TXT ou HTML formatado" },
           { icon: <BrainCircuit className="text-orange-400" />, title: "Claude Sonnet 4", desc: "A IA mais avançada da Anthropic treinada em frameworks de copywriting" },
-          { icon: <ShieldCheck className="text-red-400" />, title: "Frameworks Profissionais", desc: "AIDA, PAS, 4P's, Jornada do Herói e gatilhos de Cialdini aplicados" }
+          { icon: <ShieldCheck className="text-red-400" />, title: "Frameworks Profissionais", desc: "AIDA, PAS, 4P's, Jornada do Herói e gatilhos de Cialdini aplicados" },
+          { icon: <Film className="text-orange-400" />, title: "Geração de Vídeos IA 🔥", desc: "Crie vídeos profissionais 1080p em 1-3 minutos. Formatos 9:16 e 16:9 com Replicate" },
+          { icon: <Database className="text-green-400" />, title: "Armazenamento Permanente", desc: "Todos os vídeos salvos no Supabase Storage com biblioteca completa" }
         ].map((feat, i) => (
           <div key={i} className="p-8 rounded-3xl glass border-white/5 hover:border-yellow-400/20 transition-all flex flex-col items-center">
             <div className="mb-6">{feat.icon}</div>
@@ -374,7 +547,8 @@ const Pricing = () => (
               "IA Claude Sonnet 4",
               "Histórico 7 dias",
               "1 variação",
-              "Exportar TXT/HTML"
+              "Exportar TXT/HTML",
+              "❌ Sem geração de vídeos"
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-2 text-gray-400">
                 <CheckCircle2 size={14} className="text-gray-600" /> {item}
@@ -401,7 +575,8 @@ const Pricing = () => (
               "Histórico 30 dias",
               "Personas e frameworks",
               "Exportar TXT/HTML",
-              "Suporte por email"
+              "Suporte por email",
+              "❌ Sem geração de vídeos"
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-2 text-gray-400">
                 <CheckCircle2 size={14} className="text-blue-400" /> {item}
@@ -431,7 +606,10 @@ const Pricing = () => (
               "Upload arquivos (10MB)",
               "Histórico 365 dias",
               "Suporte prioritário (4h)",
-              "Exportar múltiplos formatos"
+              "Exportar múltiplos formatos",
+              "🔥 Geração de Vídeos IA (30/mês)",
+              "🎬 Vídeos 1080p em 1-3min",
+              "📱 Formatos 9:16 e 16:9"
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-2 text-gray-400">
                 <CheckCircle2 size={14} className="text-purple-400" /> {item}
@@ -687,6 +865,7 @@ export default function App() {
       <Hero />
       <PainPoints />
       <CopyTypes />
+      <VideoGeneration />
       <Comparison />
       <Features />
       <Pricing />

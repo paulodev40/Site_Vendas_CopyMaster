@@ -6,6 +6,76 @@ Todas as especificações do arquivo `BRIEFING-LANDING-PAGE.md` foram implementa
 
 ---
 
+## 🔥 NOVA FUNCIONALIDADE - Janeiro 2026
+
+### 🎥 Geração de Vídeos com IA (IMPLEMENTADO!)
+**Data:** 18 de Janeiro de 2026
+
+Implementada a funcionalidade completa de geração de vídeos profissionais com IA no Copy Master Pro!
+
+#### 🎬 Recursos Implementados:
+
+##### ✨ **Características Principais:**
+- ✅ **Geração Ultra Rápida** - Vídeos prontos em 1-3 minutos
+- ✅ **Qualidade Cinema** - 1080p Full HD
+- ✅ **Formatos Versáteis** - 9:16 (Stories/Reels) e 16:9 (Landscape/YouTube)
+- ✅ **IA de Última Geração** - Integração com Replicate (MiniMax Video-01, VEO)
+- ✅ **Upload de Imagem** - Use imagens de referência para melhores resultados
+- ✅ **Armazenamento Permanente** - Supabase Storage
+- ✅ **Biblioteca Completa** - Histórico organizado
+- ✅ **Preview Instantâneo** - Visualize antes de baixar
+- ✅ **Download Ilimitado** - Baixe quantas vezes quiser
+
+##### 📍 **Alterações no Site:**
+
+1. **Nova Seção Dedicada (`VideoGeneration`)**
+   - Seção completa com 9 cards de recursos
+   - Tutorial passo a passo: Descrever → Escolher Formato → Gerar
+   - 8 casos de uso destacados (Stories, Reels, YouTube, etc.)
+   - CTA específico para geração de vídeos
+   - Design com gradientes laranja/roxo para destaque visual
+
+2. **Hero Section Atualizada**
+   - Adicionado "+Vídeos IA 🔥" na proposta de valor
+   - Novo texto: "Claude Sonnet 4 + Frameworks + Vídeos IA = Copies e Vídeos que Vendem"
+
+3. **CopyTypes Section**
+   - 6º tipo de copy adicionado: "Vídeos com IA 🔥"
+   - Ícone Film com destaque laranja
+   - Features: Qualidade 1080p, Formatos Stories/YouTube, Upload de imagem
+
+4. **Features Section**
+   - 2 novos recursos adicionados:
+     - "Geração de Vídeos IA 🔥" - com ícone Film
+     - "Armazenamento Permanente" - com ícone Database
+   - Total de 8 recursos exclusivos
+
+5. **Pricing Section**
+   - **Plano FREE:** ❌ Sem geração de vídeos
+   - **Plano BASIC:** ❌ Sem geração de vídeos
+   - **Plano PRO:** ✅ 30 vídeos/mês + vídeos 1080p + formatos 9:16/16:9
+   - Destaque visual para recursos de vídeo no plano PRO
+
+6. **Imports Atualizados**
+   - Novos ícones: `Film`, `Play`, `Monitor`, `Smartphone`, `Image`, `Database`, `Sparkles`
+
+##### 🎯 **Casos de Uso Destacados:**
+- 📱 Stories & Reels
+- 🎥 Anúncios de Vídeo
+- 🌐 Landing Pages
+- 📺 YouTube Shorts
+- 💼 Apresentações
+- 🎬 VSL (Video Sales Letter)
+- 📧 Email Marketing
+- 🚀 Lançamentos
+
+##### 💎 **Disponibilidade:**
+- ✨ Disponível exclusivamente nos planos PRO e ENTERPRISE
+- 🎯 30 vídeos por mês no plano PRO
+- 🔥 Feature promocionada com badge "NOVO! 🔥"
+
+---
+
 ## ✅ Seções Implementadas
 
 ### 1. **Hero Section (Seção Principal)** ✅
