@@ -118,8 +118,8 @@ const Hero = () => (
       <div className="mt-12 max-w-4xl mx-auto relative group">
         <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-cyan-400 rounded-2xl blur opacity-20 group-hover:opacity-40 transition"></div>
         <img 
-          src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&q=80&w=1200" 
-          alt="AI Interface" 
+          src="/images/sistema-screenshot.png" 
+          alt="Copy Master Pro - Interface do Sistema" 
           className="relative rounded-2xl border border-white/10 glass w-full object-cover h-[300px] md:h-[500px]" 
         />
       </div>
@@ -541,11 +541,10 @@ const Pricing = () => (
             {[
               "3 projetos/mês",
               "5 tipos de copy",
-              "IA Claude Sonnet 4",
               "Histórico 7 dias",
               "1 variação",
               "Exportar TXT/HTML",
-              "❌ Sem geração de vídeos"
+              "🎬 2 vídeos IA/mês"
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-2 text-gray-400">
                 <CheckCircle2 size={14} className="text-gray-600" /> {item}
@@ -568,12 +567,11 @@ const Pricing = () => (
             {[
               "30 projetos/mês",
               "5 tipos de copy",
-              "IA Claude Sonnet 4",
               "Histórico 30 dias",
               "Personas e frameworks",
               "Exportar TXT/HTML",
               "Suporte por email",
-              "❌ Sem geração de vídeos"
+              "🎬 15 vídeos IA/mês"
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-2 text-gray-400">
                 <CheckCircle2 size={14} className="text-blue-400" /> {item}
@@ -599,12 +597,11 @@ const Pricing = () => (
             {[
               "150 projetos/mês (5/dia!)",
               "5 tipos de copy",
-              "IA Claude Sonnet 4",
               "Upload arquivos (10MB)",
               "Histórico 365 dias",
               "Suporte prioritário (4h)",
               "Exportar múltiplos formatos",
-              "🔥 Geração de Vídeos IA (30/mês)",
+              "🔥 Geração de Vídeos IA (45/mês)",
               "🎬 Vídeos 1080p em 1-3min",
               "📱 Formatos 9:16 e 16:9"
             ].map((item, i) => (
