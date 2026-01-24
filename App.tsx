@@ -62,7 +62,7 @@ const Header = () => {
           <a href="#recursos" className="hover:text-purple-400 transition">Recursos</a>
           <a href="#precos" className="hover:text-green-400 transition">Preços</a>
         </div>
-        <a href="#oferta" className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-2 rounded-full font-bold text-sm transition transform hover:scale-105 shadow-lg shadow-yellow-400/20">
+        <a href="#precos" className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-2 rounded-full font-bold text-sm transition transform hover:scale-105 shadow-lg shadow-yellow-400/20">
           COMEÇAR GRÁTIS
         </a>
       </div>
@@ -92,7 +92,7 @@ const Hero = () => (
       </p>
       
       <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
-        <a href="#oferta" className="w-full md:w-auto bg-yellow-400 text-black px-10 py-5 rounded-xl font-black text-lg flex items-center justify-center gap-2 hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-xl shadow-yellow-400/20 group">
+        <a href="#precos" className="w-full md:w-auto bg-yellow-400 text-black px-10 py-5 rounded-xl font-black text-lg flex items-center justify-center gap-2 hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-xl shadow-yellow-400/20 group">
           COMEÇAR GRÁTIS AGORA <ArrowRight className="group-hover:translate-x-1 transition" />
         </a>
         <a href="#problema" className="w-full md:w-auto glass text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-white/10 transition">
@@ -434,7 +434,7 @@ const VideoGeneration = () => (
       {/* CTA */}
       <div className="mt-16 text-center">
         <a 
-          href="#oferta" 
+          href="#precos" 
           className="inline-flex items-center gap-2 bg-orange-400 hover:bg-orange-300 text-black px-10 py-5 rounded-xl font-black text-lg transition-all transform hover:scale-105 shadow-xl shadow-orange-400/20 group"
         >
           COMEÇAR A CRIAR VÍDEOS AGORA
@@ -576,7 +576,7 @@ const ImageGeneration = () => (
       {/* CTA */}
       <div className="mt-16 text-center">
         <a 
-          href="#oferta" 
+          href="#precos" 
           className="inline-flex items-center gap-2 bg-cyan-400 hover:bg-cyan-300 text-black px-10 py-5 rounded-xl font-black text-lg transition-all transform hover:scale-105 shadow-xl shadow-cyan-400/20 group"
         >
           COMEÇAR A CRIAR IMAGENS AGORA
@@ -686,7 +686,8 @@ const Pricing = () => (
               "Histórico 7 dias",
               "1 variação",
               "Exportar TXT/HTML",
-              "🎬 2 vídeos IA/mês"
+              "🎬 2 vídeos IA/mês",
+              "🖼️ 5 imagens IA/mês"
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-2 text-gray-400">
                 <CheckCircle2 size={14} className="text-gray-600" /> {item}
@@ -713,7 +714,8 @@ const Pricing = () => (
               "Personas e frameworks",
               "Exportar TXT/HTML",
               "Suporte por email",
-              "🎬 15 vídeos IA/mês"
+              "🎬 15 vídeos IA/mês",
+              "🖼️ 45 imagens IA/mês"
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-2 text-gray-400">
                 <CheckCircle2 size={14} className="text-blue-400" /> {item}
@@ -745,7 +747,8 @@ const Pricing = () => (
               "Exportar múltiplos formatos",
               "🔥 Geração de Vídeos IA (45/mês)",
               "🎬 Vídeos 1080p em 1-3min",
-              "📱 Formatos 9:16 e 16:9"
+              "📱 Formatos 9:16 e 16:9",
+              "🖼️ 100 imagens IA/mês"
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-2 text-gray-400">
                 <CheckCircle2 size={14} className="text-purple-400" /> {item}
@@ -1010,7 +1013,7 @@ export default function App() {
       
       {/* Floating CTA for Mobile */}
       <div className="md:hidden fixed bottom-6 left-6 right-6 z-40">
-        <a href="#oferta" className="w-full bg-yellow-400 text-black py-4 rounded-full font-black text-center block shadow-2xl shadow-yellow-400/30 animate-bounce">
+        <a href="#precos" className="w-full bg-yellow-400 text-black py-4 rounded-full font-black text-center block shadow-2xl shadow-yellow-400/30 animate-bounce">
           COMEÇAR GRÁTIS AGORA
         </a>
       </div>
