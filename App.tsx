@@ -220,9 +220,9 @@ const CopyTypes = () => (
           },
           {
             icon: <Target className="text-green-400" size={32} />,
-            title: "Ads (Meta Ads)",
-            desc: "5 variações de anúncios prontos para Facebook e Instagram com diferentes ângulos",
-            features: ["5 variações", "Headlines testadas", "Copywriting direto"]
+            title: "Geração de Imagens",
+            desc: "Crie imagens profissionais e alinhadas à sua marca em segundos para anúncios, posts e criativos",
+            features: ["Variações ilimitadas", "Estilos e formatos prontos", "Pronto para publicar"]
           },
           {
             icon: <Mail className="text-purple-400" size={32} />,
@@ -439,6 +439,148 @@ const VideoGeneration = () => (
         >
           COMEÇAR A CRIAR VÍDEOS AGORA
           <Film className="group-hover:scale-110 transition" />
+        </a>
+      </div>
+    </div>
+  </section>
+);
+
+// Seção de Geração de Imagens com IA
+const ImageGeneration = () => (
+  <section className="py-24 bg-gradient-to-b from-black via-zinc-950 to-black relative overflow-hidden">
+    <div className="absolute inset-0 z-0">
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-[120px]"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px]"></div>
+    </div>
+
+    <div className="container mx-auto px-6 relative z-10">
+      <div className="text-center mb-16">
+        <div className="inline-block px-4 py-1 rounded-full glass border-cyan-400/30 text-cyan-400 text-xs font-bold mb-6 uppercase tracking-wider">
+          ✨ NOVO! CRIATIVOS EM SEGUNDOS
+        </div>
+        <h2 className="font-display text-4xl md:text-6xl font-black mb-8 leading-tight">
+          <span className="text-white">Geração de </span>
+          <span className="text-cyan-400">Imagens com IA</span>
+        </h2>
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          Crie imagens profissionais e alinhadas à sua marca em <span className="text-cyan-400 font-bold">segundos</span>.
+          Perfeito para anúncios, posts e criativos de alta conversão.
+        </p>
+      </div>
+
+      {/* Cards de Recursos */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        {[
+          {
+            icon: <Sparkles className="text-cyan-400" size={32} />,
+            title: "Geração Instantânea",
+            desc: "Crie imagens com qualidade profissional em poucos segundos",
+            badge: "⚡ Rápido"
+          },
+          {
+            icon: <ImageIcon className="text-purple-400" size={32} />,
+            title: "Variações Ilimitadas",
+            desc: "Teste múltiplas versões para campanhas e criativos A/B",
+            badge: "🔁 Teste"
+          },
+          {
+            icon: <Monitor className="text-blue-400" size={32} />,
+            title: "Formatos para Ads",
+            desc: "Quadrado, 4:5, 9:16 e 16:9 prontos para cada canal",
+            badge: "📐 Multi"
+          },
+          {
+            icon: <BrainCircuit className="text-pink-400" size={32} />,
+            title: "Direção Criativa",
+            desc: "Defina estilo, cores, iluminação e identidade visual",
+            badge: "🎨 Estilo"
+          },
+          {
+            icon: <Upload className="text-green-400" size={32} />,
+            title: "Imagem de Referência",
+            desc: "Use uma imagem base para guiar a estética do resultado",
+            badge: "🖼️ Ref"
+          },
+          {
+            icon: <Download className="text-yellow-400" size={32} />,
+            title: "Download em Alta",
+            desc: "Baixe seus criativos prontos para publicação",
+            badge: "⬇️ Export"
+          }
+        ].map((feature, i) => (
+          <div key={i} className="glass p-8 rounded-2xl border-white/5 hover:border-cyan-400/20 transition group relative overflow-hidden">
+            <div className="absolute top-4 right-4 text-xs font-bold glass px-2 py-1 rounded-full border-white/10">
+              {feature.badge}
+            </div>
+            <div className="mb-6">{feature.icon}</div>
+            <h3 className="text-xl font-bold mb-3 text-white group-hover:text-cyan-400 transition">
+              {feature.title}
+            </h3>
+            <p className="text-gray-400 leading-relaxed text-sm">
+              {feature.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* Demonstração Visual */}
+      <div className="max-w-5xl mx-auto glass p-8 rounded-3xl border-cyan-400/20">
+        <div className="text-center mb-8">
+          <h3 className="text-2xl font-bold mb-2 text-white">
+            Como Funciona?
+          </h3>
+          <p className="text-gray-400">
+            3 passos simples para criar imagens que vendem
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {[
+            {
+              step: "01",
+              title: "Descreva sua Ideia",
+              desc: "Digite o conceito da imagem ou o objetivo do anúncio",
+              icon: <Sparkles className="text-cyan-400" size={24} />
+            },
+            {
+              step: "02",
+              title: "Escolha o Estilo",
+              desc: "Selecione formato, cores e identidade visual",
+              icon: <ImageIcon className="text-purple-400" size={24} />
+            },
+            {
+              step: "03",
+              title: "Gerar e Baixar",
+              desc: "Em segundos sua imagem está pronta para publicar",
+              icon: <Download className="text-green-400" size={24} />
+            }
+          ].map((step, i) => (
+            <div key={i} className="text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full glass flex items-center justify-center border-2 border-white/10">
+                {step.icon}
+              </div>
+              <div className="text-5xl font-black text-white/10 mb-2">
+                {step.step}
+              </div>
+              <h4 className="text-lg font-bold mb-2 text-white">
+                {step.title}
+              </h4>
+              <p className="text-gray-400 text-sm">
+                {step.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* CTA */}
+      <div className="mt-16 text-center">
+        <a 
+          href="#oferta" 
+          className="inline-flex items-center gap-2 bg-cyan-400 hover:bg-cyan-300 text-black px-10 py-5 rounded-xl font-black text-lg transition-all transform hover:scale-105 shadow-xl shadow-cyan-400/20 group"
+        >
+          COMEÇAR A CRIAR IMAGENS AGORA
+          <ImageIcon className="group-hover:scale-110 transition" />
         </a>
       </div>
     </div>
@@ -857,6 +999,7 @@ export default function App() {
       <PainPoints />
       <CopyTypes />
       <VideoGeneration />
+      <ImageGeneration />
       <Comparison />
       <Features />
       <Pricing />
