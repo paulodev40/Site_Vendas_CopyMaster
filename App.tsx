@@ -70,6 +70,8 @@ const Header = () => {
   );
 };
 
+const HERO_VIDEO_URL = 'https://www.youtube.com/embed/SgBBKwmUYog?autoplay=1&mute=1&playsinline=1&rel=0';
+
 const Hero = () => (
   <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-mesh">
     <div className="absolute inset-0 z-0">
@@ -117,11 +119,17 @@ const Hero = () => (
 
       <div className="mt-12 max-w-4xl mx-auto relative group">
         <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-cyan-400 rounded-2xl blur opacity-20 group-hover:opacity-40 transition"></div>
-        <img 
-          src="/images/sistema-screenshot.png" 
-          alt="Copy Master Pro - Interface do Sistema" 
-          className="relative rounded-2xl border border-white/10 glass w-full object-cover h-[300px] md:h-[500px]" 
-        />
+        <div className="relative rounded-2xl border border-white/10 glass w-full overflow-hidden">
+          <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src={HERO_VIDEO_URL}
+              title="Copy Master Pro - Vídeo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
       </div>
     </div>
   </section>
