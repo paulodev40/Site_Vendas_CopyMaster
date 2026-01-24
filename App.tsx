@@ -25,9 +25,10 @@ import {
   X,
   Check,
   AlertCircle,
-  Shield,
+              "Upload arquivos (50MB)",
   DollarSign,
-  Film,
+                "🔥 45 vídeos/mês com IA",
+                "🖼️ 100 imagens/mês"
   Play,
   Monitor,
   Smartphone,
@@ -196,6 +197,7 @@ const PainPoints = () => (
         <div className="inline-block px-6 py-3 rounded-xl glass border-red-500/30 text-red-400 font-bold">
           💔 Resultado: Você perde vendas todos os dias por falta de uma copy poderosa
         </div>
+              "🎬 Vídeos 1080p em 1-3min",
       </div>
     </div>
   </section>
@@ -273,6 +275,7 @@ const CopyTypes = () => (
     </div>
   </section>
 );
+                "🎬 Vídeos 1080p em 1-3min",
 
 // Seção de Geração de Vídeos com IA
 const VideoGeneration = () => (
@@ -996,7 +999,7 @@ const Footer = () => (
       <div className="flex justify-center gap-6 text-xs text-gray-600 mb-6">
         <a href="#" className="hover:text-white transition">Termos de Uso</a>
         <a href="#" className="hover:text-white transition">Privacidade</a>
-        <a href="#" className="hover:text-white transition">Contato</a>
+        <a href="mailto:solucoesinteligentes83@gmail.com" className="hover:text-white transition">Contato</a>
       </div>
       <div className="text-xs text-gray-700 space-y-1">
         <p>📧 solucoesinteligentes83@gmail.com</p>
