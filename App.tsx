@@ -58,7 +58,7 @@ const Header = () => {
   );
 };
 
-const HERO_VIDEO_URL = '/videos/SistemaOn.mp4';
+const HERO_VIDEO_URL = 'https://www.youtube.com/embed/D_86O9BsSUw';
 
 const Hero = () => (
   <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-mesh">
@@ -109,16 +109,12 @@ const Hero = () => (
         <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-cyan-400 rounded-2xl blur opacity-20 group-hover:opacity-40 transition"></div>
         <div className="relative rounded-2xl border border-white/10 glass w-full overflow-hidden">
           <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
-            <video
+            <iframe
               className="absolute inset-0 w-full h-full"
               src={HERO_VIDEO_URL}
               title="Copy Master Pro - Vídeo"
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls
-              preload="metadata"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             />
           </div>
         </div>
