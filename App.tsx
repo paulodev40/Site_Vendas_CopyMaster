@@ -176,6 +176,8 @@ const PainPoints = () => (
             <h3 className="text-xl font-bold mb-3 text-white group-hover:text-yellow-400 transition">{item.title}</h3>
             <p className="text-gray-400 leading-relaxed">{item.desc}</p>
           </div>
+        ))}
+      </div>
     </div>
   </section>
 );
