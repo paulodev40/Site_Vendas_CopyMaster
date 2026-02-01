@@ -406,44 +406,10 @@ const VideoGeneration = () => (
 
 // Seção de Geração de Imagens com IA
 const ImageGeneration = () => (
-              "Exportar TXT/HTML",
-              "Suporte por email",
-              "🎬 15 vídeos IA/mês",
-              "🖼️ 45 imagens IA/mês"
-            ].map((item, i) => (
-          {[
-            "📱 Stories & Reels",
-            "🎥 Anúncios de Vídeo",
-            "🌐 Landing Pages",
-            "📺 YouTube Shorts",
-            "💼 Apresentações",
-            "🎬 VSL (Video Sales Letter)",
-            "📧 Email Marketing",
-            "🚀 Lançamentos"
-          ].map((use, i) => (
-            <div key={i} className="glass px-6 py-3 rounded-full border-white/10 hover:border-orange-400/30 transition text-sm font-semibold">
-              {use}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* CTA */}
-      <div className="mt-16 text-center">
-        <a 
-          href="#precos" 
-          className="inline-flex items-center gap-2 bg-orange-400 hover:bg-orange-300 text-black px-10 py-5 rounded-xl font-black text-lg transition-all transform hover:scale-105 shadow-xl shadow-orange-400/20 group"
-        >
-          COMEÇAR A CRIAR VÍDEOS AGORA
-          <Film className="group-hover:scale-110 transition" />
-            [
-              "150 roteiros/mês (5/dia!)",
-              "Histórico 365 dias",
-              "Suporte prioritário (4h)",
-              "🔥 Geração de Vídeos IA (45/mês)",
-              "🎬 Vídeos 1080p em 1-3min",
-              "📱 Formatos 9:16 e 16:9"
-            ].map((item, i) => (
+  <section className="py-24 bg-gradient-to-b from-black via-zinc-950 to-black relative overflow-hidden">
+    <div className="absolute inset-0 z-0">
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-[120px]"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px]"></div>
     </div>
 
     <div className="container mx-auto px-6 relative z-10">
