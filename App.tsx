@@ -246,14 +246,15 @@ const CopyTypes = () => (
                   <CheckCircle2 size={14} className="text-cyan-400" />
                   {feature}
                 </li>
-              [
-                "30 roteiros/mês",
-                "Histórico 30 dias",
-                "Exportar TXT/HTML",
-                "Suporte por email",
-                "🎬 15 vídeos IA/mês",
-                "🖼️ 45 imagens IA/mês"
-              ].map((item, i) => (
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
 // Seção de Geração de Vídeos com IA
 const VideoGeneration = () => (
   <section className="py-24 bg-gradient-to-b from-black via-zinc-950 to-black relative overflow-hidden">
