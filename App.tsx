@@ -625,11 +625,10 @@ const Pricing = () => (
           <ul className="space-y-3 mb-8 text-sm">
             {[
               "3 projetos/mês",
-              "5 tipos de copy",
               "Histórico 7 dias",
               "1 variação",
               "Exportar TXT/HTML",
-              "🎬 2 vídeos IA/mês",
+              "🔥 Geração de Vídeos IA (3/mês)",
               "🖼️ 5 imagens IA/mês"
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-2 text-gray-400">
@@ -637,7 +636,7 @@ const Pricing = () => (
               </li>
             ))}
           </ul>
-          <a href="https://forms.gle/i9cjNnGEqiVKUjFh8" target="_blank" rel="noopener noreferrer" className="w-full block text-center glass py-3 rounded-xl font-bold hover:bg-white/10 transition">
+          <a href="https://solucoesinteligentes83.com" target="_blank" rel="noopener noreferrer" className="w-full block text-center glass py-3 rounded-xl font-bold hover:bg-white/10 transition">
             Começar Grátis
           </a>
         </div>
@@ -652,12 +651,11 @@ const Pricing = () => (
           <ul className="space-y-3 mb-8 text-sm">
             {[
               "30 projetos/mês",
-              "5 tipos de copy",
-              "Histórico 30 dias",
+              "Histórico de 90 dias",
               "Personas e frameworks",
               "Exportar TXT/HTML",
               "Suporte por email",
-              "🎬 15 vídeos IA/mês",
+              "🔥 Geração de Vídeos IA (15/mês)",
               "🖼️ 45 imagens IA/mês"
             ].map((item, i) => (
               <li key={i} className="flex items-center gap-2 text-gray-400">
@@ -683,9 +681,8 @@ const Pricing = () => (
           <ul className="space-y-3 mb-8 text-sm">
             {[
               "150 projetos/mês (5/dia!)",
-              "5 tipos de copy",
               "Upload arquivos (10MB)",
-              "Histórico 365 dias",
+              "Histórico Permanente",
               "Suporte prioritário (4h)",
               "Exportar múltiplos formatos",
               "🔥 Geração de Vídeos IA (45/mês)",
