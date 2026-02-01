@@ -1,36 +1,26 @@
 import React, { useEffect, useState } from 'react';
-import { 
-  ArrowRight, 
-  CheckCircle2, 
-            [
-              "150 roteiros/mês (5/dia!)",
-              "Histórico 365 dias",
-              "Suporte prioritário (4h)",
-              "🔥 Geração de Vídeos IA (45/mês)",
-              "🎬 Vídeos 1080p em 1-3min",
-              "📱 Formatos 9:16 e 16:9"
-            ].map((item, i) => (
-  BarChart,
-  Upload,
-  Download,
-  History,
-  Search,
-  Copy,
-  Star,
-  TrendingUp,
-  X,
-  Check,
-  AlertCircle,
-              "Upload arquivos (50MB)",
-  DollarSign,
-                "🔥 45 vídeos/mês com IA",
-                "🖼️ 100 imagens/mês"
-  Play,
-  Monitor,
-  Smartphone,
-  Image as ImageIcon,
+import {
+  ArrowRight,
+  BrainCircuit,
+  CheckCircle2,
+  ChevronDown,
   Database,
-  Sparkles
+  Download,
+  FileText,
+  Film,
+  History,
+  Image as ImageIcon,
+  Mail,
+  Monitor,
+  Play,
+  Rocket,
+  Shield,
+  Smartphone,
+  Sparkles,
+  Target,
+  TrendingUp,
+  Upload,
+  X
 } from 'lucide-react';
 
 // --- Components ---
@@ -362,15 +352,13 @@ const VideoGeneration = () => (
               {feature.desc}
             </p>
           </div>
-        ))}
-      </div>
-
-      {/* Demonstração Visual */}
-      <div className="max-w-5xl mx-auto glass p-8 rounded-3xl border-orange-400/20">
-        <div className="text-center mb-8">
-          <h3 className="text-2xl font-bold mb-2 text-white">
-            Como Funciona?
-          </h3>
+            [
+              "5 roteiros/mês",
+              "Histórico 7 dias",
+              "Exportar TXT/HTML",
+              "🎬 3 vídeos IA/mês",
+              "🖼️ 5 imagens IA/mês"
+            ].map((item, i) => (
           <p className="text-gray-400">
             3 passos simples para criar vídeos profissionais
           </p>
@@ -411,16 +399,14 @@ const VideoGeneration = () => (
                 {step.desc}
               </p>
             </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Casos de Uso */}
-      <div className="mt-16 text-center">
-        <h3 className="text-2xl font-bold mb-8 text-white">
-          Perfeito Para:
-        </h3>
-        <div className="flex flex-wrap justify-center gap-4">
+            [
+              "30 roteiros/mês",
+              "Histórico 30 dias",
+              "Exportar TXT/HTML",
+              "Suporte por email",
+              "🎬 15 vídeos IA/mês",
+              "🖼️ 45 imagens IA/mês"
+            ].map((item, i) => (
           {[
             "📱 Stories & Reels",
             "🎥 Anúncios de Vídeo",
@@ -446,18 +432,14 @@ const VideoGeneration = () => (
         >
           COMEÇAR A CRIAR VÍDEOS AGORA
           <Film className="group-hover:scale-110 transition" />
-        </a>
-      </div>
-    </div>
-  </section>
-);
-
-// Seção de Geração de Imagens com IA
-const ImageGeneration = () => (
-  <section className="py-24 bg-gradient-to-b from-black via-zinc-950 to-black relative overflow-hidden">
-    <div className="absolute inset-0 z-0">
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-[120px]"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px]"></div>
+            [
+              "150 roteiros/mês (5/dia!)",
+              "Histórico 365 dias",
+              "Suporte prioritário (4h)",
+              "🔥 Geração de Vídeos IA (45/mês)",
+              "🎬 Vídeos 1080p em 1-3min",
+              "📱 Formatos 9:16 e 16:9"
+            ].map((item, i) => (
     </div>
 
     <div className="container mx-auto px-6 relative z-10">
