@@ -176,13 +176,6 @@ const PainPoints = () => (
             <h3 className="text-xl font-bold mb-3 text-white group-hover:text-yellow-400 transition">{item.title}</h3>
             <p className="text-gray-400 leading-relaxed">{item.desc}</p>
           </div>
-            [
-              "5 roteiros/mês",
-              "Histórico 7 dias",
-              "Exportar TXT/HTML",
-              "🎬 3 vídeos IA/mês",
-              "🖼️ 5 imagens IA/mês"
-            ].map((item, i) => (
     </div>
   </section>
 );
