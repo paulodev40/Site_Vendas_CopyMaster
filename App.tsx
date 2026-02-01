@@ -20,6 +20,7 @@ import {
   Target,
   TrendingUp,
   Upload,
+  Video,
   X
 } from 'lucide-react';
 
