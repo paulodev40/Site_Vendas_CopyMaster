@@ -50,7 +50,7 @@ const Header = () => {
           <a href="#recursos" className="hover:text-purple-400 transition">Recursos</a>
           <a href="#precos" className="hover:text-green-400 transition">Preços</a>
         </div>
-        <a href="#precos" className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-2 rounded-full font-bold text-sm transition transform hover:scale-105 shadow-lg shadow-yellow-400/20">
+        <a href="https://solucoesinteligentes83.com" className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-2 rounded-full font-bold text-sm transition transform hover:scale-105 shadow-lg shadow-yellow-400/20">
           COMEÇAR GRÁTIS
         </a>
       </div>
@@ -82,7 +82,7 @@ const Hero = () => (
       </p>
       
       <div className="flex flex-col md:flex-row gap-4 justify-center items-center mb-8">
-        <a href="#precos" className="w-full md:w-auto bg-yellow-400 text-black px-10 py-5 rounded-xl font-black text-lg flex items-center justify-center gap-2 hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-xl shadow-yellow-400/20 group">
+        <a href="https://solucoesinteligentes83.com" className="w-full md:w-auto bg-yellow-400 text-black px-10 py-5 rounded-xl font-black text-lg flex items-center justify-center gap-2 hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-xl shadow-yellow-400/20 group">
           COMEÇAR GRÁTIS AGORA <ArrowRight className="group-hover:translate-x-1 transition" />
         </a>
         <a href="#problema" className="w-full md:w-auto glass text-white px-10 py-5 rounded-xl font-bold text-lg hover:bg-white/10 transition">
@@ -520,7 +520,7 @@ const ImageGeneration = () => (
       {/* CTA */}
       <div className="mt-16 text-center">
         <a 
-          href="#precos" 
+          href="https://solucoesinteligentes83.com" 
           className="inline-flex items-center gap-2 bg-cyan-400 hover:bg-cyan-300 text-black px-10 py-5 rounded-xl font-black text-lg transition-all transform hover:scale-105 shadow-xl shadow-cyan-400/20 group"
         >
           COMEÇAR A CRIAR IMAGENS AGORA
@@ -646,7 +646,7 @@ const Pricing = () => (
         <div className="glass p-8 rounded-2xl border-white/5 hover:border-blue-400/20 transition">
           <div className="text-center mb-6">
             <h3 className="text-2xl font-bold mb-2 text-blue-400">BASIC</h3>
-            <div className="text-4xl font-black text-white mb-2">R$ 129</div>
+            <div className="text-4xl font-black text-white mb-2">R$ 97</div>
             <p className="text-sm text-gray-500">/mês</p>
           </div>
           <ul className="space-y-3 mb-8 text-sm">
@@ -665,7 +665,7 @@ const Pricing = () => (
               </li>
             ))}
           </ul>
-          <a href="https://pay.kiwify.com.br/EGgJUUM" target="_blank" rel="noopener noreferrer" className="w-full block text-center bg-blue-600 py-3 rounded-xl font-bold hover:bg-blue-500 transition">
+          <a href="https://pay.kiwify.com.br/BadUXsr" target="_blank" rel="noopener noreferrer" className="w-full block text-center bg-blue-600 py-3 rounded-xl font-bold hover:bg-blue-500 transition">
             Escolher Basic
           </a>
         </div>
@@ -698,7 +698,7 @@ const Pricing = () => (
               </li>
             ))}
           </ul>
-          <a href="https://pay.kiwify.com.br/G5OsCDB" target="_blank" rel="noopener noreferrer" className="w-full block text-center bg-purple-600 py-3 rounded-xl font-bold hover:bg-purple-500 transition">
+          <a href="https://pay.kiwify.com.br/p3buLC7" target="_blank" rel="noopener noreferrer" className="w-full block text-center bg-purple-600 py-3 rounded-xl font-bold hover:bg-purple-500 transition">
             Escolher Pro
           </a>
         </div>
@@ -956,7 +956,7 @@ export default function App() {
       
       {/* Floating CTA for Mobile */}
       <div className="md:hidden fixed bottom-6 left-6 right-6 z-40">
-        <a href="#precos" className="w-full bg-yellow-400 text-black py-4 rounded-full font-black text-center block shadow-2xl shadow-yellow-400/30 animate-bounce">
+        <a href="https://solucoesinteligentes83.com" className="w-full bg-yellow-400 text-black py-4 rounded-full font-black text-center block shadow-2xl shadow-yellow-400/30 animate-bounce">
           COMEÇAR GRÁTIS AGORA
         </a>
       </div>
