@@ -261,7 +261,7 @@ Gere múltiplas versões da mesma copy com ângulos diferentes para testar qual 
 | Copy Master Pro | ChatGPT/Outras IAs |
 |-----------------|-------------------|
 | ✅ Especializado em copywriting brasileiro | ❌ Genérico |
-| ✅ Claude Sonnet 4 (IA mais avançada) | ❌ Modelos básicos |
+| ✅ I.A. personalizada para geração de roteiros, imagens e vídeos | ❌ Modelos básicos |
 | ✅ Frameworks de copywriting aplicados | ❌ Respostas genéricas |
 | ✅ Templates prontos por tipo de copy | ❌ Você precisa criar os prompts |
 | ✅ Interface focada em conversão | ❌ Chat genérico |

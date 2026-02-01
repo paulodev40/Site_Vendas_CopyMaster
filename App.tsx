@@ -2,18 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { 
   ArrowRight, 
   CheckCircle2, 
-  Zap, 
-  Target, 
-  Users, 
-  Clock, 
-  ChevronDown,
-  BrainCircuit,
-  Rocket,
-  ShieldCheck,
-  MessageSquare,
-  FileText,
-  Mail,
-  Video,
+            [
+              "150 roteiros/mês (5/dia!)",
+              "Histórico 365 dias",
+              "Suporte prioritário (4h)",
+              "🔥 Geração de Vídeos IA (45/mês)",
+              "🎬 Vídeos 1080p em 1-3min",
+              "📱 Formatos 9:16 e 16:9"
+            ].map((item, i) => (
   BarChart,
   Upload,
   Download,
@@ -82,8 +78,8 @@ const Hero = () => (
     
     <div className="container mx-auto px-6 relative z-10 text-center">
       <h1 className="font-display text-4xl md:text-7xl font-black mb-6 leading-tight tracking-tight">
-        <span className="text-white">Crie Copies de</span> <br />
-        <span className="text-yellow-400">Alta Conversão</span> <br />
+        <span className="text-white">Crie conteúdo de alta conversão</span> <br />
+        <span className="text-yellow-400">para o seu produto</span> <br />
         <span className="text-white">em</span> <span className="text-cyan-400">5 Minutos</span>
       </h1>
       
@@ -190,15 +186,13 @@ const PainPoints = () => (
             <h3 className="text-xl font-bold mb-3 text-white group-hover:text-yellow-400 transition">{item.title}</h3>
             <p className="text-gray-400 leading-relaxed">{item.desc}</p>
           </div>
-        ))}
-      </div>
-
-      <div className="mt-16 text-center">
-        <div className="inline-block px-6 py-3 rounded-xl glass border-red-500/30 text-red-400 font-bold">
-          💔 Resultado: Você perde vendas todos os dias por falta de uma copy poderosa
-        </div>
-              "🎬 Vídeos 1080p em 1-3min",
-      </div>
+            [
+              "5 roteiros/mês",
+              "Histórico 7 dias",
+              "Exportar TXT/HTML",
+              "🎬 3 vídeos IA/mês",
+              "🖼️ 5 imagens IA/mês"
+            ].map((item, i) => (
     </div>
   </section>
 );
@@ -210,7 +204,7 @@ const CopyTypes = () => (
       <div className="text-center mb-16">
         <div className="inline-block px-4 py-1 rounded-full glass border-cyan-400/30 text-cyan-400 text-xs font-bold mb-6">A SOLUÇÃO COMPLETA</div>
         <h2 className="font-display text-4xl md:text-6xl font-black mb-8 leading-tight">
-          <span className="text-white">5 Tipos de Copy</span><br />
+          <span className="text-white">Tipos de Propaganda</span><br />
           <span className="text-yellow-400">Prontas em Minutos</span>
         </h2>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -267,16 +261,14 @@ const CopyTypes = () => (
                   <CheckCircle2 size={14} className="text-cyan-400" />
                   {feature}
                 </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
-                "🎬 Vídeos 1080p em 1-3min",
-
+              [
+                "30 roteiros/mês",
+                "Histórico 30 dias",
+                "Exportar TXT/HTML",
+                "Suporte por email",
+                "🎬 15 vídeos IA/mês",
+                "🖼️ 45 imagens IA/mês"
+              ].map((item, i) => (
 // Seção de Geração de Vídeos com IA
 const VideoGeneration = () => (
   <section className="py-24 bg-gradient-to-b from-black via-zinc-950 to-black relative overflow-hidden">
@@ -493,12 +485,6 @@ const ImageGeneration = () => (
             badge: "⚡ Rápido"
           },
           {
-            icon: <ImageIcon className="text-purple-400" size={32} />,
-            title: "Variações Ilimitadas",
-            desc: "Teste múltiplas versões para campanhas e criativos A/B",
-            badge: "🔁 Teste"
-          },
-          {
             icon: <Monitor className="text-blue-400" size={32} />,
             title: "Formatos para Ads",
             desc: "Quadrado, 4:5, 9:16 e 16:9 prontos para cada canal",
@@ -509,12 +495,6 @@ const ImageGeneration = () => (
             title: "Direção Criativa",
             desc: "Defina estilo, cores, iluminação e identidade visual",
             badge: "🎨 Estilo"
-          },
-          {
-            icon: <Upload className="text-green-400" size={32} />,
-            title: "Imagem de Referência",
-            desc: "Use uma imagem base para guiar a estética do resultado",
-            badge: "🖼️ Ref"
           },
           {
             icon: <Download className="text-yellow-400" size={32} />,
@@ -619,7 +599,7 @@ const Comparison = () => (
           <div className="space-y-4">
             {[
               { cmp: "Especializado em copywriting brasileiro", vs: "Genérico" },
-              { cmp: "Claude Sonnet 4 (IA mais avançada)", vs: "Modelos básicos" },
+              { cmp: "I.A. personalizada para geração de roteiros, imagens e vídeos", vs: "Modelos básicos" },
               { cmp: "Frameworks de copywriting aplicados", vs: "Respostas genéricas" },
               { cmp: "Interface focada em conversão", vs: "Chat genérico" },
               { cmp: "Histórico organizado", vs: "Perde conversas antigas" }
@@ -653,12 +633,11 @@ const Features = () => (
       <h2 className="font-display text-4xl font-bold mb-16">Recursos <span className="text-yellow-400">Exclusivos</span></h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {[
-          { icon: <Upload className="text-yellow-400" />, title: "Upload de Material (RAG)", desc: "Faça upload de PDFs, Word, TXT do seu produto e a IA usa como referência" },
-          { icon: <Users className="text-cyan-400" />, title: "Sistema de Personas", desc: "Escolha entre 6 personas pré-definidas para adaptar a linguagem" },
           { icon: <History className="text-blue-400" />, title: "Histórico Completo", desc: "Nunca perca uma copy criada. De 7 dias (Free) até 1 ano (Pro)" },
           { icon: <Download className="text-pink-400" />, title: "Exportação Múltipla", desc: "Copiar para clipboard, baixar em TXT ou HTML formatado" },
           { icon: <BrainCircuit className="text-orange-400" />, title: "Claude Sonnet 4", desc: "A IA mais avançada da Anthropic treinada em frameworks de copywriting" },
-          { icon: <ShieldCheck className="text-red-400" />, title: "Frameworks Profissionais", desc: "AIDA, PAS, 4P's, Jornada do Herói e gatilhos de Cialdini aplicados" },
+          { icon: <ImageIcon className="text-purple-400" />, title: "Nano Banana", desc: "Gerador de imagens para criar criativos prontos para anúncios e redes sociais" },
+          { icon: <Film className="text-cyan-400" />, title: "Minimax", desc: "Gerador de vídeos IA com foco em criativos dinâmicos e alta conversão" },
           { icon: <Film className="text-orange-400" />, title: "Geração de Vídeos IA 🔥", desc: "Crie vídeos profissionais 1080p em 1-3 minutos. Formatos 9:16 e 16:9 com Replicate" },
           { icon: <Database className="text-green-400" />, title: "Armazenamento Permanente", desc: "Todos os vídeos salvos no Supabase Storage com biblioteca completa" }
         ].map((feat, i) => (
@@ -816,7 +795,7 @@ const FAQ = () => (
         {[
           {
             q: "Copy Master Pro é melhor que ChatGPT?",
-            a: "Sim! Somos especializados em copywriting brasileiro com Claude Sonnet 4 (IA mais avançada), frameworks aplicados e templates prontos. ChatGPT é genérico e você precisa criar seus próprios prompts."
+            a: "Sim! Somos especializados em copywriting brasileiro com I.A. personalizada para geração de roteiros, imagens e vídeos, frameworks aplicados e templates prontos. ChatGPT é genérico e você precisa criar seus próprios prompts."
           },
           {
             q: "Preciso de conhecimento técnico para usar?",
