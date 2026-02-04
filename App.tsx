@@ -745,7 +745,8 @@ const Pricing = () => {
       </div>
     </div>
   </section>
-);
+  );
+};
 
 // FAQ
 const FAQ = () => (
