@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useKiwifyRedirect } from './useKiwifyRedirect';
 import {
   ArrowRight,
   BrainCircuit,
@@ -602,106 +603,125 @@ const Features = () => (
 );
 
 // Pricing com 4 planos
-const Pricing = () => (
-  <section id="precos" className="py-24 bg-zinc-950">
-    <div className="container mx-auto px-6">
-      <div className="text-center mb-16">
-        <h2 className="font-display text-4xl md:text-5xl font-black mb-6">
-          Escolha Seu <span className="text-yellow-400">Plano</span>
-        </h2>
-        <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-          Comece grátis e escale conforme seu negócio cresce
-        </p>
-      </div>
+const Pricing = () => {
+  const { redirectToCheckout } = useKiwifyRedirect();
+  const CHECKOUT_BASIC = 'https://pay.kiwify.com.br/BadUXsr';
+  const CHECKOUT_PRO = 'https://pay.kiwify.com.br/p3buLC7';
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {/* FREE */}
-        <div className="glass p-8 rounded-2xl border-white/5 hover:border-white/10 transition">
-          <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold mb-2">FREE</h3>
-            <div className="text-4xl font-black text-white mb-2">R$ 0</div>
-            <p className="text-sm text-gray-500">Para testar a qualidade</p>
-          </div>
-          <ul className="space-y-3 mb-8 text-sm">
-            {[
-              "3 projetos/mês",
-              "Histórico 7 dias",
-              "1 variação",
-              "Exportar TXT/HTML",
-              "🔥 Geração de Vídeos IA (3/mês)",
-              "🖼️ 5 imagens IA/mês"
-            ].map((item, i) => (
-              <li key={i} className="flex items-center gap-2 text-gray-400">
-                <CheckCircle2 size={14} className="text-gray-600" /> {item}
-              </li>
-            ))}
-          </ul>
-          <a href="https://solucoesinteligentes83.com" target="_blank" rel="noopener noreferrer" className="w-full block text-center glass py-3 rounded-xl font-bold hover:bg-white/10 transition">
-            Começar Grátis
-          </a>
+  return (
+    <section id="precos" className="py-24 bg-zinc-950">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="font-display text-4xl md:text-5xl font-black mb-6">
+            Escolha Seu <span className="text-yellow-400">Plano</span>
+          </h2>
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+            Comece grátis e escale conforme seu negócio cresce
+          </p>
         </div>
 
-        {/* BASIC */}
-        <div className="glass p-8 rounded-2xl border-white/5 hover:border-blue-400/20 transition">
-          <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold mb-2 text-blue-400">BASIC</h3>
-            <div className="text-4xl font-black text-white mb-2">R$ 97</div>
-            <p className="text-sm text-gray-500">/mês</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {/* FREE */}
+          <div className="glass p-8 rounded-2xl border-white/5 hover:border-white/10 transition">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold mb-2">FREE</h3>
+              <div className="text-4xl font-black text-white mb-2">R$ 0</div>
+              <p className="text-sm text-gray-500">Para testar a qualidade</p>
+            </div>
+            <ul className="space-y-3 mb-8 text-sm">
+              {[
+                "3 projetos/mês",
+                "Histórico 7 dias",
+                "1 variação",
+                "Exportar TXT/HTML",
+                "🔥 Geração de Vídeos IA (3/mês)",
+                "🖼️ 5 imagens IA/mês"
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-2 text-gray-400">
+                  <CheckCircle2 size={14} className="text-gray-600" /> {item}
+                </li>
+              ))}
+            </ul>
+            <a href="https://solucoesinteligentes83.com" target="_blank" rel="noopener noreferrer" className="w-full block text-center glass py-3 rounded-xl font-bold hover:bg-white/10 transition">
+              Começar Grátis
+            </a>
           </div>
-          <ul className="space-y-3 mb-8 text-sm">
-            {[
-              "30 projetos/mês",
-              "Histórico de 90 dias",
-              "Personas e frameworks",
-              "Exportar TXT/HTML",
-              "Suporte por email",
-              "🔥 Geração de Vídeos IA (15/mês)",
-              "🖼️ 45 imagens IA/mês"
-            ].map((item, i) => (
-              <li key={i} className="flex items-center gap-2 text-gray-400">
-                <CheckCircle2 size={14} className="text-blue-400" /> {item}
-              </li>
-            ))}
-          </ul>
-          <a href="https://pay.kiwify.com.br/BadUXsr" target="_blank" rel="noopener noreferrer" className="w-full block text-center bg-blue-600 py-3 rounded-xl font-bold hover:bg-blue-500 transition">
-            Escolher Basic
-          </a>
+
+          {/* BASIC */}
+          <div className="glass p-8 rounded-2xl border-white/5 hover:border-blue-400/20 transition">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold mb-2 text-blue-400">BASIC</h3>
+              <div className="text-4xl font-black text-white mb-2">R$ 97</div>
+              <p className="text-sm text-gray-500">/mês</p>
+            </div>
+            <ul className="space-y-3 mb-8 text-sm">
+              {[
+                "30 projetos/mês",
+                "Histórico de 90 dias",
+                "Personas e frameworks",
+                "Exportar TXT/HTML",
+                "Suporte por email",
+                "🔥 Geração de Vídeos IA (15/mês)",
+                "🖼️ 45 imagens IA/mês"
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-2 text-gray-400">
+                  <CheckCircle2 size={14} className="text-blue-400" /> {item}
+                </li>
+              ))}
+            </ul>
+            <a
+              href={CHECKOUT_BASIC}
+              onClick={(event) => {
+                event.preventDefault();
+                redirectToCheckout(CHECKOUT_BASIC);
+              }}
+              className="w-full block text-center bg-blue-600 py-3 rounded-xl font-bold hover:bg-blue-500 transition"
+            >
+              Escolher Basic
+            </a>
+          </div>
+
+          {/* PRO - Mais Popular */}
+          <div className="glass p-8 rounded-2xl border-purple-400/30 hover:border-purple-400/50 transition relative">
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-purple-600 text-white px-4 py-1 rounded-full text-xs font-bold">
+              MAIS POPULAR
+            </div>
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold mb-2 text-purple-400">PRO</h3>
+              <div className="text-4xl font-black text-white mb-2">R$ 257</div>
+              <p className="text-sm text-gray-500">/mês</p>
+            </div>
+            <ul className="space-y-3 mb-8 text-sm">
+              {[
+                "150 projetos/mês (5/dia!)",
+                "Upload arquivos (10MB)",
+                "Histórico Permanente",
+                "Suporte prioritário (4h)",
+                "Exportar múltiplos formatos",
+                "🔥 Geração de Vídeos IA (45/mês)",
+                "🎬 Vídeos 1080p em 1-3min",
+                "📱 Formatos 9:16 e 16:9",
+                "🖼️ 100 imagens IA/mês"
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-2 text-gray-400">
+                  <CheckCircle2 size={14} className="text-purple-400" /> {item}
+                </li>
+              ))}
+            </ul>
+            <a
+              href={CHECKOUT_PRO}
+              onClick={(event) => {
+                event.preventDefault();
+                redirectToCheckout(CHECKOUT_PRO);
+              }}
+              className="w-full block text-center bg-purple-600 py-3 rounded-xl font-bold hover:bg-purple-500 transition"
+            >
+              Escolher Pro
+            </a>
+          </div>
+
+
         </div>
-
-        {/* PRO - Mais Popular */}
-        <div className="glass p-8 rounded-2xl border-purple-400/30 hover:border-purple-400/50 transition relative">
-          <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-purple-600 text-white px-4 py-1 rounded-full text-xs font-bold">
-            MAIS POPULAR
-          </div>
-          <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold mb-2 text-purple-400">PRO</h3>
-            <div className="text-4xl font-black text-white mb-2">R$ 257</div>
-            <p className="text-sm text-gray-500">/mês</p>
-          </div>
-          <ul className="space-y-3 mb-8 text-sm">
-            {[
-              "150 projetos/mês (5/dia!)",
-              "Upload arquivos (10MB)",
-              "Histórico Permanente",
-              "Suporte prioritário (4h)",
-              "Exportar múltiplos formatos",
-              "🔥 Geração de Vídeos IA (45/mês)",
-              "🎬 Vídeos 1080p em 1-3min",
-              "📱 Formatos 9:16 e 16:9",
-              "🖼️ 100 imagens IA/mês"
-            ].map((item, i) => (
-              <li key={i} className="flex items-center gap-2 text-gray-400">
-                <CheckCircle2 size={14} className="text-purple-400" /> {item}
-              </li>
-            ))}
-          </ul>
-          <a href="https://pay.kiwify.com.br/p3buLC7" target="_blank" rel="noopener noreferrer" className="w-full block text-center bg-purple-600 py-3 rounded-xl font-bold hover:bg-purple-500 transition">
-            Escolher Pro
-          </a>
-        </div>
-
-
-      </div>
 
       {/* ROI Calculator */}
       <div className="mt-16 max-w-3xl mx-auto glass p-8 rounded-2xl border-green-400/20">
