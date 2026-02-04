@@ -122,7 +122,8 @@ const Hero = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
 
 const PainPoints = () => (
   <section id="problema" className="py-24 bg-black">
